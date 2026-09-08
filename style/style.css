@@ -41,7 +41,7 @@ body {
 
 .squares__small {
     width: 78px;
-    height: 78px;
+    min-height: 78px;
     background-color: #9D0208;
 }
 
@@ -49,12 +49,14 @@ body {
 
 .squares__block--first {
     justify-content: flex-start;
+    align-items: flex-end;
 }
 
 /* SECOND BLOCK */
 
 .squares__block--second {
     justify-content: center;
+    align-items: stretch;
 }
 
 .squares__block--second .squares__small {
@@ -71,13 +73,19 @@ body {
 /* FOURTH BLOCK */
 
 .squares__block--fourth {
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.squares__block--fourth .squares__small:last-child
+ {
+    align-self: flex-end;
 }
 
 /* FIFTH BLOCK */
 
 .squares__block--fifth {
     justify-content: space-around;
+    align-items: baseline;
 }
 
 .squares__block--fifth .squares__small {
@@ -89,7 +97,7 @@ body {
     justify-content: center;
 }
 
-.squares__block--fifth span {
+.squares__block--fifth p {
     color: white;
     font-size: 12px;
 }
@@ -106,7 +114,7 @@ body {
 }
 
 .squares__long {
-    width: 156px;
     height: 78px;
+    flex-grow: 2;
     background-color: #9D0208;
 }
