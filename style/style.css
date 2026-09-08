@@ -114,7 +114,7 @@ body {
 }
 
 .squares__long {
-    width: 156px;
     height: 78px;
+    flex-grow: 2;
     background-color: #9D0208;
 }
