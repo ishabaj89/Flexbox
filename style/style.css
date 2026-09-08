@@ -73,7 +73,12 @@ body {
 /* FOURTH BLOCK */
 
 .squares__block--fourth {
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.squares__block--fourth .squares__small:last-child
+ {
+    align-self: flex-end;
 }
 
 /* FIFTH BLOCK */
